@@ -1,0 +1,48 @@
+<mvc:View
+    controllerName="learning.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true"
+>
+    <Shell>
+		<App class="myAppDemoWT">
+            <pages>
+                <Page
+                    id="page"
+                    title="{i18n>title}"
+                >
+                    <content>
+                    
+                    <!-- <mvc:XMLView  viewName="learning.View.App"></mvc:XMLView> -->
+                        <!-- <Panel headerText="Simple Form"
+                        class="sapUiResponsiveMargin"
+                        width="auto"
+                        >
+                            <content>
+                                <Text text="Hello World" />
+                                <Button
+                                    text="Say Hello"
+                                    press=".onShowHello"
+                                class="myCustomButton"
+
+                                />
+                                <Input
+                                    value="{/recipient/name}"
+                                    description="Hello {/recipient/name}"
+                                    valueLiveUpdate="true"
+                                    width="60%"
+                                />
+                                <Text text="This is a simple SAPUI5 application."
+                                class="sapUiSmallMargin"/>
+                                <FormattedText  
+									htmlText="Hello this is formatted Text"
+									class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
+
+                            </content>
+                        </Panel> -->
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

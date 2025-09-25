@@ -1,0 +1,78 @@
+<mvc:View controllerName="learning.controller.Main"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+   <Shell>
+		<App class="myAppDemoWT">
+            <pages>
+                <Page
+                    id="page"
+                    title="{i18n>title}"
+                >
+                    <content>
+                        <Panel headerText="Simple Form"
+                        class="sapUiResponsiveMargin"
+                        width="auto"
+                        >
+                            <content>
+                    <!-- <mvc:XMLView  viewName="learning.View.HelloPanel"></mvc:XMLView> -->
+
+                                <Text text="Hello World" />
+                                <Button
+                                    text="Say Hello"
+                                    press=".onShowHello"
+                                class="myCustomButton"
+
+                                />
+                                <Input
+                                    value="{/recipient/name}"
+                                    description="Hello {/recipient/name}"
+                                    valueLiveUpdate="true"
+                                    width="60%"
+                                />
+                                <Text text="This is a simple SAPUI5 application."
+                                class="sapUiSmallMargin"/>
+                                <FormattedText  
+									htmlText="Hello this is formatted Text"
+									class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
+
+                            </content>
+                        </Panel>
+                        <Panel
+      headerText="{i18n>helloPanelTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto" >
+      <content>
+      <Button
+         id="helloDialogButton"
+        icon="sap-icon://world"
+         text="{i18n>openDialogButtonText}"
+         press=".onOpenDialog"
+         class="sapUiSmallMarginEnd"/>
+      <Button
+         text="{i18n>showHelloButtonText}"
+         press=".onShowHello"
+         class="myCustomButton"/>
+      <Input
+         value="{/recipient/name}"
+         valueLiveUpdate="true"
+         width="60%"/>
+      <FormattedText
+         htmlText="Hello {/recipient/name}"
+         class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
+         <mvc:XMLView
+            viewName="learning.view.InvoiceList"/>
+                           
+      </content>
+      
+   </Panel>
+   
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
+
+
+<!-- Step 24: Sorting and Grouping -->
